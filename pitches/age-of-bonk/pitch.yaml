@@ -155,9 +155,6 @@ open_questions:
   - id: q3
     question: Meta beyond the character deck depends on the branch. What else persists between matches, and when do base upgrades come in?
     status: tbd
-  - id: q4
-    question: Write the two super HLDs.
-    status: action
 
 directions_heading: Two branching ideas
 directions_sub: The actual pitches are here
