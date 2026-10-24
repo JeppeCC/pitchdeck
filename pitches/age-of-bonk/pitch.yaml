@@ -1,0 +1,233 @@
+# Age of Bonk. Source: Miro board, Frame 2.
+# Markdown is allowed in every text field. Mermaid goes in a ```mermaid fence.
+
+title: Age of Bonk
+subtitle: Working title
+icon: img/icon-caveman.png
+pitch: >
+  A strategic through-the-ages game where your tribe plunders and razes the other tribe,
+  by merging and combining base materials into weapons and equipment.
+formula: TABS × Craftera / Gem TD × TFT × Age of Mythology
+skip:
+  label: Skip the justification
+  to: s-paths
+
+convictions: [c1, c2, c3]
+
+evidence:
+  - id: e1
+    title: Joust Arena and Spellbonk
+    type: testing
+    summary: >
+      Two internal prototypes that established the Friendslop character style: funny, memey, still likeable.
+      Recent hard internal data on this style is the foundation of the pitch. Everything else is made to fit around it.
+    supports: [c1]
+    data: Numbers to be added.
+  - id: e2
+    title: Gladiator prototype by Tornado Bear
+    type: comp
+    summary: >
+      A Voodoo prototype that combined the same character style with ragdoll fighting.
+      Together with our own tests it shows the combination is marketable.
+    supports: [c1]
+  - id: e3
+    title: Draft Showdown vs Castle Busters
+    type: comp
+    summary: >
+      Subjective side-by-side of two Voodoo comps. They are near mirror images: Draft Showdown has the conversation,
+      depth and in-match scaling, Castle Busters has the toy, the visual joy and the marketability.
+      This pitch tries to sit in between. Keep the Castle Busters hook, import the Draft Showdown decisions.
+    supports: [c3]
+    comparison:
+      scale: 10
+      games:
+        - name: Draft Showdown
+          image: img/draft-showdown-icon.png
+        - name: Castle Busters
+          image: img/castle-busters-icon.png
+      axes:
+        - { name: Conversation, scores: [7.5, 2.5] }
+        - { name: Strategic depth, scores: [7, 1] }
+        - { name: Visual joy, scores: [3.5, 10] }
+        - { name: Randomness, scores: [6, 2.5] }
+        - { name: Power scale (match), scores: [8, 3] }
+        - { name: Power scale (meta), scores: [4, 8] }
+        - { name: Toy, scores: [1, 9.5] }
+        - { name: Fantasy, scores: [3, 7] }
+        - { name: Marketability, scores: [3.5, 7] }
+
+ingredients:
+  toy:
+    - name: Craftera
+      image: img/craftera.png
+      link: https://apps.apple.com/us/app/craftera-roguelike-td/id6789571262
+      take: Drafting base materials. Bone, stone, stick, stake, axe.
+      why: A small roguelike TD that proves combine-and-discover is readable on a phone.
+    - name: Gem TD
+      image: img/gem-td.jpg
+      take: Merge + auto battle. Place, combine, let it resolve.
+      why: Warcraft III mod. Straightforward merge rules that stayed fun for years.
+  rules:
+    cards:
+    - name: Craftera
+      image: img/craftera.png
+      link: https://apps.apple.com/us/app/craftera-roguelike-td/id6789571262
+      take: |
+        - Combine, discover recipes
+        - Work stations (cooldowns, range, etc.)
+        - "Minion" characters
+    - name: Age of Mythology
+      image: img/age-of-mythology.png
+      take: |
+        **God path as tech tree.**
+
+        - Picking a god unlocks specific recipes, combos and base items
+        - Adds bonuses that shape a playstyle, so it acts as a pseudo-roguelike
+  meta:
+    points:
+      - Deck building with characters
+    consider:
+      - Persistent base upgrades, Castle Busters style. Parked for a later iteration.
+    note: The rest depends on the branch we take. Both branches share deck building with characters.
+  theme:
+    - name: Age of Mythology
+      image: img/age-of-mythology.png
+      take: Mythical gods.
+    - name: We Are Warriors
+      image: img/we-are-warriors.png
+      take: |
+        **Through the ages.**
+
+        Match power progression: Primitive / Early → Advanced (Mid) → Mythical (Late)
+
+        Meta power progression in big jumps:
+
+        ```mermaid
+        flowchart LR
+          A[Stone age] --> B[Ancient] --> C[Antique] --> D[Middle age] --> E[Renaissance] --> F[Industrial] --> G[Modern] --> H[Future]
+        ```
+
+        Flavour within an age: Nordic (Viking / Norse), Middle Eastern (Egyptian), Anglo (knights), Asian (Samurai), South American (Aztec).
+      why: Evergreen theme with a natural progression and a huge catalogue of characters and items.
+  visual_hook:
+    label: Marketability
+    cards:
+    - name: Friendslop
+      image: img/friendslop.png
+      take: Character design that is funny and memey but still likeable.
+      why: A genre, not one game. We have an established style from Joust Arena and Spellbonk, and recent internal data says it is marketable.
+    - name: Kick the Buddy
+      image: img/kick-the-buddy.png
+      take: Reactive ragdolls, persistent damage.
+  monetization:
+    points:
+      - Characters
+      - Deck building
+    note: Two strong points, nothing fancier. The argument is in the sanity check.
+
+sanity_check:
+  - heading: Strong marketable hook
+    body: The visual setup, ragdolls fighting with persistent damage, has shown positive signals.
+    refs: [c1, e1, e2, visual_hook]
+  - heading: Strong theme
+    body: Through the ages is an evergreen theme with natural progression and a diverse catalogue of characters and items.
+    refs: [c3, theme]
+  - heading: Strong monetization potential
+    body: Deck building with characters, with room for build-and-fight setups, together with a strong theme.
+    refs: [theme, monetization]
+  - heading: Fresh every run
+    body: Randomness in the drafting of gods and in the base ingredients gives a new experience each time.
+    refs: [c3, toy, rules]
+  - heading: Power scale in both meta and match
+    body: Tech ages inside a match, the timeline across matches.
+    refs: [c3, theme]
+  - heading: Aligned with our core convictions
+    body: Marketable hook on top of real decisions, no rushed input, and the mandatory stickiness drivers are both present.
+    refs: [c1, c2, c3]
+
+open_questions:
+  - id: q1
+    question: The through-the-ages theme may get harder in the modern ages. Cap the max age earlier, or branch off into fantasy and mythology?
+    status: open
+  - id: q2
+    question: Match rules. Realtime or turn based? How much player input? Short best-of skirmishes or one long match?
+    status: open
+  - id: q3
+    question: Meta beyond the character deck depends on the branch. What else persists between matches, and when do base upgrades come in?
+    status: tbd
+  - id: q4
+    question: Write the two super HLDs.
+    status: action
+
+directions_heading: Two branching ideas
+directions_sub: The actual pitches are here
+directions:
+  - name: Realtime auto shooter (islands)
+    summary: Super HLD v1. Realtime, units auto-fight, each tribe on its own island.
+    answers: [q2]
+    image: img/hld1-mockup.jpg
+    loop:
+      - step: Build your deck of characters
+        note: Minions become characters, each with a bonus and an upgrade path.
+      - step: Enter the fight
+        note: Kill the other player's characters and plunder their island for gold.
+      - step: Pick a god to worship
+        note: Your starting faction. Three base materials plus one god-specific one. Draft one of three from a random pool.
+      - step: Get or draft materials
+        note: Your god altar spawns materials every X seconds.
+      - step: Merge materials
+        note: Into a workstation that produces a weapon type. Characters throw it automatically, as in Craftera.
+      - step: Advance to a new age
+        note: Better materials, better weapons.
+      - step: Win or lose
+        note: Until one island is empty.
+      - step: Upgrade and advance
+        note: Upgrade characters, advance the timeline. Upgrade the island? Open question.
+    body: |
+      This idea leans heavily on Craftera's game rules. Two islands, two tribes, and everything you craft gets thrown at the other side.
+
+      ## Minions become characters
+
+      Each character carries a bonus like "runs x% faster" and has an upgrade path like Draft Showdown.
+
+      ![Craftera minion](img/craftera-minion.png) → ![Viking](img/char-viking.png) ![Peasant](img/char-peasant.png) ![Knight](img/char-knight.png) ![Aspirant fighter](img/char-aspirant.png)
+
+      ## Merge, as in Craftera
+
+      Merge materials into a workstation that produces a weapon type. Your characters pick it up and throw it at the enemy on their own.
+
+      ![Craftera gameplay](img/craftera-gameplay.gif)
+  - name: Turn based autobattle (arena)
+    summary: Super HLD v2. Turn based, rounds resolve as an autobattle in a shared arena.
+    answers: [q2]
+    loop:
+      - step: Build your deck of characters
+        note: Characters bring different perks to a battle.
+      - step: Start a match
+        note: Two tribes meet in the arena. The goal is to break the other tribe's altar.
+      - step: Pick a god to worship
+        note: Your starting faction and its materials.
+      - step: Get or draft materials
+        note: Between rounds, not under fire.
+      - step: Merge materials
+        note: Into equipment your fighters equip. Weapon and character combo sets attack pattern and speed.
+      - step: Advance to a new age
+        note: Better materials, better equipment.
+      - step: Win or lose the round
+        note: The winner attacks the altar once per surviving character.
+      - step: Upgrade and advance
+        note: Upgrade characters, advance the timeline. Upgrade the island? Open question.
+    body: |
+      This idea leans more into TABS crossed with Draft Showdown and Crazy Jousting. Two tribes or civs meet up and fight it out in an arena.
+
+      Between fights the player merges base materials into equipment that the fighters equip. The fights themselves run automatically. Attack pattern and speed come from the weapon and character combination, so the fight is more intimate and TABS-like than Path A's island shooting.
+
+      ## Characters bring perks
+
+      Build your deck before the match. Each character brings a different perk to the battle, and what they end up holding comes from what you merged between rounds.
+
+      ![Viking](img/char-viking.png) ![Peasant](img/char-peasant.png) ![Knight](img/char-knight.png) ![Aspirant fighter](img/char-aspirant.png)
+
+      ## Breaking the altar
+
+      A match is a series of rounds. Each round resolves as an autobattle. The winner of the round gets to attack the other tribe's altar once per surviving character, so winning cleanly matters more than winning at all. The match ends when an altar breaks.

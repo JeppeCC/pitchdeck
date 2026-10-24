@@ -1,0 +1,39 @@
+# Shared convictions. Every pitch references these by id.
+# short: the two-or-three-word label under the circle.
+# images: up to three, relative to this file. They are composited into the circle.
+# statement: one sentence, shown on hover and at the top of the breakdown.
+# reasoning: markdown, the full argument.
+
+- id: c1
+  short: Ragdoll marketability
+  images: [img/kick-the-buddy.png, img/ragdoll-brawler.png, img/joust-arena.png]
+  statement: The marketability of ragdolls and a TABS-like visual setup can be paired with more strategic gameplay.
+  reasoning: |
+    Ragdolls fighting and persistent damage sell themselves in a 15-second video.
+    The games that use them today are shallow. The bet is that the hook survives when the decisions underneath it get deeper.
+
+- id: c2
+  short: No joystick for PvP
+  images: [img/joystick-pvp.png]
+  crossed: true
+  statement: Player-input toys are fine, as long as skill expression comes from decision-making and the decisions are not rushed.
+  reasoning: |
+    Castle Busters has a slingshot, but you have plenty of time to set up the shot.
+
+    This is mainly true for PvP. Do not get baited by the fact that idle games have joysticks.
+
+- id: c3
+  short: Stickiness
+  images: [img/draft-showdown-icon.png, img/castle-busters-icon.png]
+  statement: Get stronger, enjoy the ending. Everything else is seasoning.
+  reasoning: |
+    For a game to be sticky there has to be something that drives the player to press again. Not all drivers are mandatory.
+
+    | Driver | Required |
+    |---|---|
+    | Power scaling | Mandatory |
+    | Enjoyable resolve | Mandatory |
+    | "Conversation" | Can be low |
+    | Strategic depth | Can be low |
+    | Randomness | Can be low |
+    | Fun toy | Can be low |
